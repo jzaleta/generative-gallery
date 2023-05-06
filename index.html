@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generative Gallery</title>
+</head>
+<body>
+	<h1>Generative Gallery</h1>
+	<p>Click the button below to go to a random page:</p>
+	<button onclick="selectRandomPage()">Go to a random page!</button>
+
+	<script>
+		function selectRandomPage() {
+			var pages = ["truchet-tiles/index.html", "circle-packing/index.html"];
+			var randomPage = pages[Math.floor(Math.random() * pages.length)];
+			window.location.href = randomPage;
+		}
+	</script>
+
+	<h2>List of Pages:</h2>
+	<ul>
+		<li><a href="truchet-tiles/index.html">Truchet Tiles</a></li>
+		<li><a href="circle-packing/index.html">Circle Packing</a></li>
+	</ul>
+</body>
+</html>
